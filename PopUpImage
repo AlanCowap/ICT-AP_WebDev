@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- We're using HTML5 -->
+
+<html>
+<head>
+<title>PopUpImage</title>
+<style>
+#chkbox:checked ~ label #back{
+    display:block;
+    }
+#back{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,20.5);
+    display:none;
+    }
+#popup{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width:500px;
+    height:375px;
+    border:10px solid white;
+    }
+</style>
+</head>
+
+<body style="background-color:skyblue">
+<h1>Click'n'Pop</h1>
+<input type="checkbox" id="chkbox" style="display:none;">
+<label for="chkbox">
+    <img src="image.jpg" width="200">
+</label>
+<label for="chkbox">
+    <div id="back">
+	<div id="popup">
+	    <img src="image.jpg" width="500">
+	</div>
+    </div>
+</label>
+
+</body>
+</html>
